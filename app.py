@@ -6,18 +6,16 @@ import pickle
 import time
 import pandas as pd
 from PIL import Image
-#from image_classifier import generate_image_class
+from image_classifier import image_classifier
 
-st.set_page_config(layout="wide")
-
-st.title("What is that??")
-st.header("Upload a Photo, the proprietary model will attempt to identify the article of clothing.")
-
-user_image= st.file_uploader('Please select a file to upload.',type='jpeg',accept_multiple_files=False)
+with open("/image_classifier.pkl", "rb") as file:
+  image_classifier = pickle.load(file)
 
 if user_image is not None:
     image = Image.open(user_image)
     st.image(image, caption='Uploaded photo.', use_column_width=True)
     st.write("")
-    st.write("Classifying...")
-    #labels = generate_image_class() 
+    with st.spinner("Making an assessment..."):
+      time.sleep(2)
+      labels = image_classifier(image)
+    st.write('This is a '+labels[0]+' '+labels[1]+' and it is a toot.')
