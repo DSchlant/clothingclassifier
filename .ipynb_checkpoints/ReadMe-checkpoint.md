@@ -6,15 +6,19 @@ Capstone
 >> Data_Preparation.ipynb
 >> Modeling_Segment.ipynb
 >> Final_Models.ipynb
+
 > final_models
 >> final_garment_model
 >> final_garment_model
+
 > data
 >> raw_dataset
+
 > streamlit_notebooks
 >> app.py
 >> image_classifier.py
 >> image_classifier.pkl
+
 > README.md
 
 
