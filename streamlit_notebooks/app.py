@@ -14,7 +14,7 @@ with open("image_classifier.pkl", "rb") as file:
   image_classifier = pickle.load(file)
 
 st.title("What is that??")
-st.header("Upload a Photo, the proprietary model will attempt to identify the article of clothing.")
+st.header("Upload a Photo, our model will attempt to identify the article of clothing.")
 
 #set up image uploader widget
 user_image = st.file_uploader('Please select a photo.',type=['jpeg','jpg'])
@@ -33,9 +33,10 @@ if user_image is not None:
       with st.spinner("Making an assessment..."):
         time.sleep(1)
         labels = image_classifier(image)
-        st.write('This is a(n) '+labels[1]+' '+labels[0]+' and it is a TOOT.')
-    with col3:
-      st.write(' ')
-    st.write('')
-    st.write('')
+        if labels[1] != 'pants' and labels[1] != 'shorts':
+          st.write('This '+labels[0]+' '+labels[1]+' is a TOOT.')
+        else:
+          st.write('These '+labels[0]+' '+labels[1]+' are a TOOT.')
+
+
 

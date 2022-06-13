@@ -9,8 +9,6 @@ Capstone
 - final_models
     - final_garment_model
     - final_garment_model
-- data
-    - raw_dataset
 - streamlit_notebooks
     - app.py
     - image_classifier.py
