@@ -2,24 +2,24 @@
 Daniel Schlant Capstone Project, June 2022
 
 Capstone
-|__ modeling_notebooks
-|   |__ Data_Preparation.ipynb
-|   |__ Modeling_Segment.ipynb
-|   |__ Final_Models.ipynb
-|__ final_models
-|   |__ final_garment_model
-|   |__ final_garment_model
-|__ data
-|   |__ raw_dataset
-|__ streamlit_notebooks
-|   |__ app.py
-|   |__ image_classifier.py
-|   |__ image_classifier.pkl
-|__ README.md
+> modeling_notebooks
+>>Data_Preparation.ipynb
+>>Modeling_Segment.ipynb
+>>Final_Models.ipynb
+>final_models
+>>final_garment_model
+>>final_garment_model
+>data
+>>raw_dataset
+>streamlit_notebooks
+>> app.py
+>>image_classifier.py
+>>image_classifier.pkl
+>README.md
 
 
 ## Background
-The growth of the global fashion industry is becoming unsustainable from an environmental perspective. Per Morgan McFall-Johnsen's 2020 [report] (https://www.weforum.org/agenda/2020/01/fashion-industry-carbon-unsustainable-environment-pollution), on behalf of the World Economic Forum:
+The growth of the global fashion industry is becoming unsustainable from an environmental perspective. Per Morgan McFall-Johnsen's 2020 __[report](https://www.weforum.org/agenda/2020/01/fashion-industry-carbon-unsustainable-environment-pollution)__, on behalf of the World Economic Forum:
 
 * Fashion production accounts for 10% of human carbon emissions
 * Between 2020 and 2000, clothing production doubled
@@ -27,12 +27,12 @@ The growth of the global fashion industry is becoming unsustainable from an envi
 
 This leads to more plastic microfibers in the world's oceans, massive amounts of textile in landfills, and the depletion of natural water resources around the world, especially in developing countries relied upon for the manufacturing of clothing products.
 
-The rise of fast fashion has likely exacerbated the issue and will likely continue to do so. While it is not a complete panacea for the issues presented by the growth of global fashion, second-hand fashion and clothes thrifting can [reduce water waste and carbon emissions] (https://globalfashionagenda.org/news-article/conscious-consumption-a-citizens-guide/).
+The rise of fast fashion has likely exacerbated the issue and will likely continue to do so. While it is not a complete panacea for the issues presented by the growth of global fashion, second-hand fashion and clothes thrifting can __[reduce water waste and carbon emissions](https://globalfashionagenda.org/news-article/conscious-consumption-a-citizens-guide/)__.
 
 The process of creating clothes out of existing clothes is possible, but requires a lot of work, and is not a pursuit commonly observed today, nor one considered commercially beneficial at this time. 
 
 ## Problem Statement
-I collected images of clothing from a deep online [image database] (http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html) and tagged the images based on garment and pattern. I identified nine articles of garment, and eight patterns. The intention is to develop computer vision models that classify an image based on the type of clothing and the clothing's pattern. 
+I collected images of clothing from a deep online __[image database](http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html)__ and tagged the images based on garment and pattern. I identified nine articles of garment, and eight patterns. The intention is to develop computer vision models that classify an image based on the type of clothing and the clothing's pattern. 
 
 In functional terms, this model would serve as a base from which, when expanded upon, it would be possible to analyze an image and identify characteristics of the clothing in that image. When utilized on pictures of clothing that a consumer is interested in, the model could be used to redirect the consumer to articles of clothing with similar characteristics on second-hand sites. This would likely be done via the keywords/labels the model assigned to the image. In this way, consumers would be able to enjoy the styles they are interested in without buying newly manufactured clothes.
 
