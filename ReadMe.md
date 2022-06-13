@@ -14,6 +14,8 @@ Capstone
     - image_classifier.py
     - image_classifier.pkl
 - README.md
+- Presentation.pdf
+- jpegs
 
 
 ## Background
