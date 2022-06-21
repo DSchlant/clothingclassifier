@@ -2,10 +2,10 @@
 Daniel Schlant Capstone Project, June 2022
 
 Capstone
-- modeling_notebooks
+- code
     - Data_Preparation.ipynb
-    - Modeling_Segment.ipynb
-    - Final_Models.ipynb
+    - Modeling_Segmentation.ipynb
+    - Final_Modeling.ipynb
 - final_models
     - final_garment_model
     - final_garment_model
